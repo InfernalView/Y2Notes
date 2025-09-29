@@ -37,3 +37,24 @@ $(h_\theta(x^i)-y^i)^2$ is the **Degree** of **Difference** between the **Predic
 $1/2m$ is used to find the **Mean** of all the **Calculated Costs**
 
 ## Gradient Descent
+GD is an **Iterative Optimization Algorithm** that is used to find the **Optimal Values** for the **Bias Parameters** $(\theta)$. Its iterative so it can be used repeatedly.
+
+$$\theta_j=\theta_j-\alpha\frac{\delta}{\delta\theta_j}J(\theta)$$
+
+$\alpha$ is the **Learning Rate**, which determines how fast the **Parameters** $(\theta)$ change
+
+$\frac{\delta}{\delta\theta_j}J(\theta)$ is the **Derivative/Gradient** of the **Cost Function**
+
+$-\frac{\delta}{\delta\theta_j}J(\theta)$ is the **Inverse** of the **Derivative**
+
+GD adjusts the **Parameter** $(\theta)$ until it reaches a **Global Minimum**, where the **Cost** is at a **Minimum**, and the accuracy of the **Hypothesis Function** is at its highest.
+
+## Process
+1. **Initialise**
+2. **Perform Hypothesis Function**
+3. **Calculate Cost Function**
+4. **Determine whether Parameters are Suitable**
+    1. If **Cost** reaches a certain **Cost Threshold**, **Continue** to 5
+    2. Otheriwse, **Do** 4.3, then **Repeat** 2-4
+    3. **Perform Gradient Descent** and **Update Model**
+5. **End**
