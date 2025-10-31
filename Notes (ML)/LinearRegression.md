@@ -47,6 +47,16 @@ $\frac{\delta}{\delta\theta_j}J(\theta)$ is the **Derivative/Gradient** of the *
 
 $-\frac{\delta}{\delta\theta_j}J(\theta)$ is the **Inverse** of the **Derivative**
 
+Solving for the derivative gives:
+
+$$\theta_j=\theta_j-\alpha \times \frac{1}{m}\sum_{i=1}^m(h_\theta(x^i)-y^i)x^i_j$$
+
+$(h_\theta(x^i)-y^i)$ is the **Cost Function**, for each respective set of inputs
+
+$x^i_j$ is the **Feature/Input** that is respective to the parameter in its same 'column'.
+
+$\frac{1}{m}\sum_{i=1}^m(h_\theta(x^i)-y^i)x^i_j$ as a whole, is the **Mean** cost of using the value of the **Parameter** $\theta_j$
+
 GD adjusts the **Parameter** $(\theta)$ until it reaches a **Global Minimum**, where the **Cost** is at a **Minimum**, and the accuracy of the **Hypothesis Function** is at its highest.
 
 ## Process
